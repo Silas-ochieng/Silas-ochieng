@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILAS OCHIENG - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text {
+            text-align: left;
+            max-width: 500px;
+        }
+
+        .intro-text h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #333;
+        }
+
+        .intro-text p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #555;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SILAS OCHIENG</h1>
+    </header>
+
+    <section class="profile-container">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Image" class="profile-img">
+
+        <div class="intro-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Silas Ochieng, a passionate Data Science student with a strong interest in Data Analysis and Machine Learning. Currently pursuing a Bachelor's Degree in Data Science at Meru University of Science and Technology, I am dedicated to leveraging data-driven solutions to solve real-world problems.</p>
+        </div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('about') }}">about</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('projects') }}">projects</a></li>
+            <li><a href="{{ url_for('documents') }}">documents</a></li>
+            <li><a href="{{ url_for('contacts') }}">contact</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>&copy; 2025 Silas Ochieng. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

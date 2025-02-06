@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents | My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: #333; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background-color: #444; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1rem; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 20px; margin: 20px; }
+        h2 { color: #333; text-align: center; }
+        footer { text-align: center; padding: 10px; background-color: #333; color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Documents</h1>
+        <p>View my important documents below.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('documents') }}">Documents</a>
+        <a href="{{ url_for('contacts') }}">Contact</a>
+    </nav>
+
+    <!-- Documents Section -->
+    <section>
+        <h2>My Documents</h2>
+        <p>Here you can find some of my work and academic documents.</p>
+        <!-- Document List with links to the static folder -->
+        <ul>
+            <li><a href="{{ url_for('static', filename='documents/Att_Receommendation _BDS.pdf') }}" target="_blank">School Recommendation letter</a></li>
+            <li><a href="{{ url_for('static', filename='documents/Insuarance cover.pdf') }}" target="_blank">Insurance Cover</a></li>
+            <li><a href="{{ url_for('static', filename='documents/Resume.pdf') }}" target="_blank">Resume</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+</body>
+</html>

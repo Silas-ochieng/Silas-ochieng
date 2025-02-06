@@ -31,6 +31,23 @@
             font-weight: 300;
         }
 
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             max-width: 800px;
             margin: 30px auto;
@@ -97,6 +114,16 @@
         <h1>Silas Ochieng</h1>
         <p>Passionate Data Scientist | Explore My Projects Below</p>
     </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">about</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
+        <a href="{{ url_for('projects') }}">projects</a>
+        <a href="{{ url_for('documents') }}">documents</a>
+        <a href="{{ url_for('contacts') }}">contact</a>
+    </nav>
 
     <div class="container">
         <h2>Explore My GitHub Projects</h2>

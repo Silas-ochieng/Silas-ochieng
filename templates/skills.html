@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skills | My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: #333; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background-color: #444; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1rem; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 20px; margin: 20px; }
+        h2 { color: #333; text-align: center; }
+        .skill-category { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 30px; }
+        .skill-category .skill-set { width: 45%; margin: 10px 0; }
+        .skill-category .skill-set h3 { text-align: center; color: #4CAF50; }
+        .skill-category .skill-set ul { list-style-type: none; padding: 0; }
+        .skill-category .skill-set li { padding: 8px 0; font-size: 1.1rem; }
+        .footer { text-align: center; padding: 10px; background-color: #333; color: #fff; margin-top: 50px; }
+        .skills-overview { text-align: center; margin-top: 30px; }
+        .skills-overview p { font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Skills</h1>
+        <p>Key technical skills in Data Science and Programming</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('documents') }}">Documents</a>
+        <a href="{{ url_for('contacts') }}">Contact</a>
+    </nav>
+
+    <!-- Skills Overview -->
+    <section class="skills-overview">
+        <h2>Overview of Skills</h2>
+        <p>I am proficient in a wide range of data science tools and programming languages. Below are some of the key skills that I have honed during my studies and projects.</p>
+    </section>
+
+    <!-- Skill Categories -->
+    <section class="skill-category">
+        <!-- Programming Languages -->
+        <div class="skill-set">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
+        </div>
+
+        <!-- Data Analysis & Visualization Tools -->
+        <div class="skill-set">
+            <h3>Data Analysis & Visualization</h3>
+            <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Tableau</li>
+                <li>Power BI</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skill-category">
+        <!-- Machine Learning & AI -->
+        <div class="skill-set">
+            <h3>Machine Learning & AI</h3>
+            <ul>
+                <li>Scikit-learn</li>
+                <li>TensorFlow</li>
+                <li>Keras</li>
+                <li>PyTorch</li>
+                <li>XGBoost</li>
+            </ul>
+        </div>
+
+        <!-- Data Management & Database Tools -->
+        <div class="skill-set">
+            <h3>Database Management</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>SQLAlchemy</li>
+                <li>Firebase</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skill-category">
+        <!-- Cloud Platforms -->
+        <div class="skill-set">
+            <h3>Cloud Platforms</h3>
+            <ul>
+                <li>AWS (Amazon Web Services)</li>
+                <li>Google Cloud</li>
+                <li>Microsoft Azure</li>
+            </ul>
+        </div>
+
+        <!-- Data Engineering -->
+        <div class="skill-set">
+            <h3>Data Engineering</h3>
+            <ul>
+                <li>Apache Spark</li>
+                <li>Airflow</li>
+                <li>ETL Pipelines</li>
+                <li>Docker</li>
+                <li>Apache Kafka</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+</body>
+</html>

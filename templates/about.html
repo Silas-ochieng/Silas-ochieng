@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me | My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,6 +20,23 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
@@ -84,16 +101,25 @@
         <p>Learn more about me and my journey</p>
     </header>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('documents') }}">Documents</a>
+        <a href="{{ url_for('contacts') }}">Contact</a>
+    </nav>
+
     <section>
         <h2>Who I Am</h2>
         <div class="about-container">
-            <!-- Replace with your photo -->
-            <img src="C:/Users/Silas Ochieng/Documents/Portfolio/Silas-ochieng/images/profile.jpg.jpg" alt="Image description">
+            <!-- Corrected Image Path -->
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Silas Ochieng">
 
+            <p>Hello! I'm <strong>Silas Ochieng</strong>, a passionate data science student with deep interests in data science, machine learning, and software development. I have experience in data analysis and visualization. I believe in teamwork and collaboration to achieve project goals.</p>
 
-            <p>Hello! I'm Silas Ochieng, a passionate data science student with a deep interest in data science, machine learning, software development. I have experience in dta analysis,visualizations . I believe in team collaboration to execute my work.</p>
-            
-            <p>Throughout my career, I have worked on various exciting projects, including Developing a model to predict crops to be grown in a specific area. I am always looking to learn and grow in the ever-evolving field of Data science, and I am excited to continue making a positive impact.</p>
+            <p>Throughout my learning journey, I have worked on various exciting projects, including developing a model to predict crops suitable for specific regions. I am always eager to learn and grow in the ever-evolving field of data science and excited to continue making a positive impact.</p>
 
             <h3>Key Skills</h3>
             <div class="skills">
