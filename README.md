@@ -1,5 +1,5 @@
 Hi there 👋, I'm **Silas Ochieng**
-I'm a Data Science graduate from  Meru University of Science and Technology, with 5 years of experience in data-driven problem-solving. My passion lies in leveraging machine learning, predictive modeling, and data visualization to enhance decision-making across various domains.
+Data Science graduate from  Meru University of Science and Technology, with 5 years of experience in data-driven problem-solving. My passion lies in leveraging machine learning, predictive modeling, and data visualization to enhance decision-making across various domains.
 
 # **Current Project**
 I'm currently working on a Predictive Model for Proactive Layer Feed Efficiency using Random Forest Regressor, aiming to optimize feeding strategies for improved egg production and feed efficiency.
